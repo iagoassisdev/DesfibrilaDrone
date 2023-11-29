@@ -10,6 +10,7 @@
     <meta name="author" content="">
     <title>DesfibrilaDrone | FIAP</title>
 
+    <!-- FAVICON -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
     <!-- FONTS -->
@@ -17,16 +18,14 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- CAROUSEL -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
 
 </head>
 
@@ -133,7 +132,9 @@
                         allowfullscreen></iframe>
 
                     <p>Veja este video, protótipo qual inspirou nosso Projeto. Desfibriladores em Drones já é uma
-                        realidade na Suiça e na Europa. Tendo uma taxa de êxito de 96% nas ocorrências, reduzindo em até 88% a chance de sequelas futuras, após um ataque cardiaco. Nós, a <a href="#team">Artemis Corporation</a>,
+                        realidade na Suiça e na Europa. Tendo uma taxa de êxito de 96% nas ocorrências, reduzindo em até
+                        88% a chance de sequelas futuras, após um ataque cardiaco. Nós, a <a href="#team">Artemis
+                            Corporation</a>,
                         viemos para democratizar essa tecnologia no Brasil.
                     </p>
                 </div>
@@ -415,26 +416,29 @@
 
                 <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
 
-                    <form>
-                        <div class="ajax-hidden">
+                    <form class="formContent" id="myform" method="POST">
+                        <div class="ajax-hidden form-input" id="form">
                             <div class="form-group wow fadeInUp animated">
                                 <label for="c_name" class="sr-only">Nome</label>
                                 <input type="text" placeholder="Nome" name="c_name" class="form-control" id="c_name">
+                                <span id="erroNome"></span>
                             </div>
 
                             <div data-wow-delay=".1s" class="form-group wow fadeInUp animated">
                                 <label for="c_email" class="sr-only">Email</label>
                                 <input type="email" placeholder="E-mail" name="c_email" class="form-control"
                                     id="c_email">
+                                <span id="erroEmail"></span>
                             </div>
 
                             <div data-wow-delay=".2s" class="form-group wow fadeInUp animated">
                                 <textarea placeholder="Mensagem" rows="7" name="c_message" id="c_message"
                                     class="form-control"></textarea>
+                                    <span id="erroMensagem"></span>
                             </div>
 
                             <button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated"
-                                type="submit">Enviar solicitação</button>
+                                type="submit" onclick="return armazenarDados()">Enviar solicitação</button>
                         </div>
                         <div class="ajax-response"></div>
                     </form>
@@ -487,29 +491,17 @@
         <!--  container end  -->
 
     </footer>
-    <!--  jQuery  -->
 
-    <script src="js/jquery.js"></script>
-    <!--  Bootstrap Core JavaScript  -->
-    <script src="js/bootstrap.min.js"></script>
-    <!--  Plugin JavaScript  -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <!-- SCRIPTS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
     <script src="js/creative.js"></script>
-    <!--  owl carousel  -->
-    <script src="owl-carousel/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo").owlCarousel({
-                autoPlay: 3000,
-                items: 3,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
-            });
 
-        });
-    </script>
 </body>
 
 </html>

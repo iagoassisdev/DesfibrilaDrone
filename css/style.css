@@ -826,13 +826,13 @@ header .header-content {
 
     .angle::after {
         border-bottom: 72px solid #333;
-        border-left: 600px solid transparent;
+        border-left: 320px solid transparent;
         right: 0;
     }
 
     .angle2::before {
         border-top: 72px solid #333;
-        border-right: 600px solid transparent;
+        border-right: 320px solid transparent;
         left: 0;
     }
 
@@ -848,7 +848,7 @@ header .header-content {
 
     .angle2::after {
         border-top: 72px solid #333;
-        border-left: 600px solid transparent;
+        border-left: 320px solid transparent;
         right: 0;
     }
 }
@@ -912,7 +912,7 @@ header .header-content {
 
     .angle::before {
         border-bottom: 30px solid #333;
-        border-right: 960px solid transparent;
+        border-right: 320px solid transparent;
         left: 0;
     }
 
@@ -928,13 +928,13 @@ header .header-content {
 
     .angle::after {
         border-bottom: 30px solid #333;
-        border-left: 960px solid transparent;
+        border-left: 320px solid transparent;
         right: 0;
     }
 
     .angle2::before {
         border-top: 30px solid #333;
-        border-right: 960px solid transparent;
+        border-right: 320px solid transparent;
         left: 0;
     }
 
@@ -950,7 +950,7 @@ header .header-content {
 
     .angle2::after {
         border-top: 30px solid #333;
-        border-left: 960px solid transparent;
+        border-left: 320px solid transparent;
         right: 0;
     }
 
@@ -1013,7 +1013,7 @@ header .header-content {
 
     .angle::before {
         border-bottom: 30px solid #333;
-        border-right: 480px solid transparent;
+        border-right: 320px solid transparent;
         left: 0;
     }
 
@@ -1029,13 +1029,13 @@ header .header-content {
 
     .angle::after {
         border-bottom: 30px solid #333;
-        border-left: 480px solid transparent;
+        border-left: 320px solid transparent;
         right: 0;
     }
 
     .angle2::before {
         border-top: 30px solid #333;
-        border-right: 480px solid transparent;
+        border-right: 320px solid transparent;
         left: 0;
     }
 
@@ -1051,7 +1051,7 @@ header .header-content {
 
     .angle2::after {
         border-top: 30px solid #333;
-        border-left: 480px solid transparent;
+        border-left: 320px solid transparent;
         right: 0;
     }
 }
