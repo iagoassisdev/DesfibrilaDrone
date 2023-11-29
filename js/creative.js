@@ -51,3 +51,39 @@
 
 })(jQuery); // End of use strict
 
+// carousel js
+
+$(document).ready(function () {
+    $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items: 3,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3]
+    });
+
+});
+
+// formulary js
+
+var serialize = function (form) {
+    var data = form.serializeArray();
+    var json = {};
+    data.forEach(function (item) {
+      if (!json[item.name]) {
+        json[item.name] = item.value;
+        return;
+      }    
+      if (!Array.isArray(json[item.name]))
+        json[item.name] = [json[item.name]];
+      json[item.name].push(item.value);
+    });
+    return json;
+  }
+  
+  var form = $("form");
+  var enviar = $("#enviar");
+  enviar.on("click", function (event) {
+    event.preventDefault();
+    var json = serialize(form);	
+    console.log(json);
+  });
